@@ -1,5 +1,9 @@
 import random
-r = random.randint(1, 100) 
+start =input('請隨機填入數字範圍開始值:')
+end = input('請隨機填入數字範圍結束值:')
+start = int(start)
+end = int(end)
+r = random.randint(start, end) 
 time = 0
 
 while True:
@@ -11,9 +15,9 @@ while True:
         break
 
     elif guess > r :
-        print ('比答案大')
+        print ('你的範圍是',start,'~',end,'比答案大')
     elif guess < r :
-        print ('比答案小')
+        print ('你的範圍是',start,'~',end,'比答案小')
     print('這是你猜的第',time, '次')
     
 #randint隨機整數 
